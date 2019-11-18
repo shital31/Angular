@@ -1,0 +1,15 @@
+.navbar {
+  background-color: #fff;
+ float: right;
+}
+.fa-th{
+  margin-top: 14px;
+  margin-left: 10px;
+  width: 30px;
+  height: 10px;
+}
+.btn{
+  margin-left:20px;
+  margin-top: 8px;
+  height:35px;
+}

@@ -6,6 +6,7 @@ import { PricingNavComponent } from './pricing-nav/pricing-nav.component';
 import { PricingInfoComponent } from './pricing-info/pricing-info.component';
 import { PricingCardComponent } from './pricing-card/pricing-card.component';
 import { PricingFooterComponent } from './pricing-footer/pricing-footer.component';
+//import { GoogleNavComponent } from './google-nav/google-nav.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { PricingFooterComponent } from './pricing-footer/pricing-footer.componen
     PricingNavComponent,
     PricingInfoComponent,
     PricingCardComponent,
-    PricingFooterComponent
+    PricingFooterComponent,
+    
   ],
   imports: [
     BrowserModule

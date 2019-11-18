@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@media screen and (max-width : 100%){
+    .lead{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+    background-color: #fff;
+    }
+}

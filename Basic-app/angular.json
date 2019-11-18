@@ -391,6 +391,124 @@
           }
         }
       }
+    },
+    "google-page": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/google-page",
+      "sourceRoot": "projects/google-page/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/google-page",
+            "index": "projects/google-page/src/index.html",
+            "main": "projects/google-page/src/main.ts",
+            "polyfills": "projects/google-page/src/polyfills.ts",
+            "tsConfig": "projects/google-page/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/google-page/src/favicon.ico",
+              "projects/google-page/src/assets"
+            ],
+            "styles": [
+              "projects/google-page/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/google-page/src/environments/environment.ts",
+                  "with": "projects/google-page/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "google-page:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "google-page:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "google-page:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/google-page/src/test.ts",
+            "polyfills": "projects/google-page/src/polyfills.ts",
+            "tsConfig": "projects/google-page/tsconfig.spec.json",
+            "karmaConfig": "projects/google-page/karma.conf.js",
+            "assets": [
+              "projects/google-page/src/favicon.ico",
+              "projects/google-page/src/assets"
+            ],
+            "styles": [
+              "projects/google-page/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/google-page/tsconfig.app.json",
+              "projects/google-page/tsconfig.spec.json",
+              "projects/google-page/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/google-page/e2e/protractor.conf.js",
+            "devServerTarget": "google-page:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "google-page:serve:production"
+            }
+          }
+        }
+      }
     }},
   "defaultProject": "Basic-app"
 }
