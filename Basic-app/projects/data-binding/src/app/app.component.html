@@ -29,10 +29,32 @@
   </div>
   <!-- event binding -->
   <div class="row">
-    <div class="col md-12">
-      <div class="box mt-2"(mouseenter)="onMouseEnter($event)" (mouseleave)="onMouseLeave($event)"
-      [style.background]="bxBlCl"></div>
+      <div  class="col md-3" class="box mt-2"(mouseenter)="onMouseEnter($event)"
+       (mouseleave)="onMouseLeave($event)"
+      [style.background]="bxBkCl">
     </div>
-  </div>
-
+    
+    <!-- <div class="col md-3" class="box mt-2" (mouseenter)="onMouseEnter($event)" 
+    (mouseleave)="onMouseLeave($event)"
+      [style.background]="bxBkCl">
+    </div>
+    
+    <div class="col md-3" class="box mt-2" (mouseenter)="onMouseEnter($event)"
+     (mouseleave)="onMouseLeave($event)"
+      [style.background]="bxBkCl">
+    </div>
+    
+    <div class="col md-3" class="box mt-2" (mouseenter)="onMouseEnter($event)" 
+    (mouseleave)="onMouseLeave($event)"
+      [style.background]="bxBkCl">
+    </div> -->
 </div>
+
+<div class="row">
+  <div class="col md-12">
+    <input type="text" [value]="title" class="m-3  ">
+    <input type="button" (click)= "onBtnClick($event)" class="btn btn-primary"value="Okey">
+  </div>
+</div>
+  </div>
+ 
