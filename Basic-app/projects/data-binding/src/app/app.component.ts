@@ -25,7 +25,7 @@ export class AppComponent {
     console.log("Exited", event);
     this.bxBkCl = "white";
   }
-  
+
   onBtnClick(event: MouseEvent) {
     this.title = this.title.toUpperCase();
     console.log("Clicked", event);
