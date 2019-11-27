@@ -1,4 +1,7 @@
-.text-center {
-  margin-right: 50px;
-  margin-left: 380px;
+.navbar{
+    background-color: #f2f2f2;
+    font-family: arial,sans-serif;
+    color: black;
+
+    
 }

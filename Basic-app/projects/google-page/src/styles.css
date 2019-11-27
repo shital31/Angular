@@ -1,10 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
-@media screen and (max-width : 100%){
-    .lead{
+@import "C:\Users\Shital\Angular\Basic-app\node_modules\font-awesome\css\font-awesome.min.css";
+/* 
+@media screen and (max-width: 100%) {
+  .lead {
     margin-left: auto !important;
     margin-right: auto !important;
     display: block !important;
     background-color: #fff;
-    }
+  }
+} */
+
+@media only screen and (max-width: 100%) {
+  body {
+    background-color: #fff;
+  }
 }

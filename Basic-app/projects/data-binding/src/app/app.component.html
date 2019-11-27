@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="col md-12">
+      <h1 class="text-muted">Data Binding</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col md-12">
+      <p>Project  Title is {{title}}</p>
+      <p><input type="{{type}}"></p>
+      <!-- <p>Time elapsed so far {{whatsDate()}}</p> -->
+    </div>
+  </div>
+  <!-- property binding -->
+  <div class="row">
+    <div class="col md-12">
+      <!-- style  -->
+      <input type="text" [style.border]="brd" [style.color]="'blue'"> 
+      <!-- class -->
+      <p class="mt-2" [class.alert]="true" [class.alert-info]="true">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ad, magnam minus, odit molestiae temporibus iure mollitia adipisci delectus veniam maxime animi. Mollitia quidem blanditiis officia, doloremque ducimus quibusdam praesentium!
+      </p>
+      <!-- attribute  -->
+      <p [attr.hi] class="'hello'" class="p-3" >
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit corrupti quasi ullam eaque eveniet accusamus et laudantium itaque voluptas. Sequi mollitia dolor placeat eveniet rem in, sit esse quam. Cupiditate!
+      </p>
+      <input type="text" [style]='style'>
+    </div>
+  </div>
+  <!-- event binding -->
+  <div class="row">
+    <div class="col md-12">
+      <div class="box mt-2"(mouseenter)="onMouseEnter($event)" (mouseleave)="onMouseLeave($event)"
+      [style.background]="bxBlCl"></div>
+    </div>
+  </div>
+
+</div>
