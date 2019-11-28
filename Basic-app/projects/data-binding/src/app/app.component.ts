@@ -20,10 +20,12 @@ export class AppComponent {
   onMouseEnter(event: MouseEvent) {
     console.log("Entered", event);
     this.bxBkCl = this.randomColor();
+    this.bxBkCl1 = this.randomColor();
   }
   onMouseLeave(event: MouseEvent) {
     console.log("Exited", event);
     this.bxBkCl = "white";
+    this.bxBkCl1 = "black";
   }
 
   onBtnClick(event: MouseEvent) {
