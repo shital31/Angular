@@ -7,6 +7,8 @@ import { SampleComponent } from './sample/sample.component';
 import { GoogleComponent } from './google/google.component';
 import { FirstSampleNewComponent } from './first-sample-new/first-sample-new.component';
 import { CustomComponentsComponent } from './custom-components/custom-components.component';
+import { CustCompComponent } from './cust-comp/cust-comp.component';
+import { MathOpsComponent } from './math-ops/math-ops.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { CustomComponentsComponent } from './custom-components/custom-components
     SampleComponent,
     GoogleComponent,
     FirstSampleNewComponent,
-    CustomComponentsComponent
+    CustomComponentsComponent,
+    CustCompComponent,
+    MathOpsComponent
   ],
   imports: [
     BrowserModule,FirstModule
