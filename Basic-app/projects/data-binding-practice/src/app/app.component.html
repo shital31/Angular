@@ -4,4 +4,49 @@
       <h1 class="text-muted">Data Binding</h1>
     </div>
   </div>
+  
+
+<!-- interpolation binding -->
+  <div class="row">
+    <div class="col-md-12">
+      <p>Project Title is {{title}}</p>
+      <input type="{{type}}">
+      <div>
+        <input type="{{type1}}" value="Okay">
+        <!-- we can call the function in interpolation -->
+      </div>
+      <p>Time elapsed so far </p> 
+    </div>
+  </div>
+</div>
+
+<!-- Property Binding -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <input type="button" value="Property Binding" [style.border]='border'>
+
+      <p [class.alert-primary]="true"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque facilis rem assumenda quas nulla excepturi, iusto eum, corporis necessitatibus praesentium temporibus magni officia hic? Sapiente hic perferendis necessitatibus. Autem, rem!</p>
+
+  </div>
+</div>
+<!-- Attribute binding(additional information about the element) -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <p [attr.hi]="'hello'">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, autem quod odit tempore provident aliquam commodi libero placeat totam pariatur voluptatem facere eum enim obcaecati consectetur dicta magni maxime est.</p>
+
+    </div>
+  </div>
+</div>
+<!-- Event binding -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="box" (mouseenter)="onMouseEnter($event)" 
+      (mouseleave)="onMouseLeave($event)"
+      [style.background]="bxbkcl"></div>
+    </div>
+  </div>
+</div>
 </div>
