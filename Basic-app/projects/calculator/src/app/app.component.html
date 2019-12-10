@@ -1,33 +1,21 @@
-
-    
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <input type="text" #Calc>
-          </div>
-          <!-- <div class="col-md-12">
-            <input type="text" #result> -->
-            <div class="row">
-              <div class="col-md-12">
-                <input type="button" value="1" class="btn btn-primary" >
-                <input type="button" value="3" class="btn btn-primary">
-                  <input type="button" value="2" class="btn btn-primary">
-                </div>
-              </div>
-            <div>
-              <input type="button" value="=" class="btn btn-primary" (click)="calculate()">
-              <input type="button" value="C" class="btn btn-primary" (click)="cls()">
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col md-12">
+            <input type="text" #calcStr>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <app-math-ops>
-              <div class="alert alert-info" #alt>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, consectetur.</p>
-              </div>
-            </app-math-ops>
-          </div>
-        </div>
-      </div>
-
-       
+    </div>
+    <div class="row">
+        <div class="col md-12">
+        <input type="text" disabled  #result>
+    </div>
+</div>
+<div class="row">
+    <div class="col md-12">
+        <input type="button" value="=" class="btn btn-primary" (click)="calculate()">
+         <input type="button" value="C" class="btn btn-primary" (click)="clear()">
+    </div>
+</div>
+<app-math-ops>
+    <div class="alert alert-info">codekul</div>
+</app-math-ops>
+</div>

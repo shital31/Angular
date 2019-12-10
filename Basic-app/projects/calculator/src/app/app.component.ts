@@ -6,27 +6,30 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
+
 export class AppComponent {
   title = 'calculator';
+// it refers to the htm;l element like document.get.elementbiId
+  @ViewChild ('calcStr',{static : false}) //static always false it shows change detection cycle, viewchild is the decorator
+  calcStr: ElementRef
 
-@ViewChild ('Calc', {static: false})
-  Calc:ElementRef
+  @ViewChild('result', { static: false })
+  result: ElementRef
 
-  @ViewChild('Calc', { static: false })
-  result:ElementRef
-
- @ViewChild('alt',{static:false})
+  @ViewChild('alt',{static:false})
   alt:ElementRef
 
-  calculate(Calci: string){
-    console.log(this.Calc.nativeElement.value)
-    this.result.nativeElement.value = eval(this.Calc.nativeElement.value)
+  // function to calculate operation
+  calculate(){
+    console.log(this.calcStr.nativeElement.value)
+    this.result.nativeElement.value = eval(this.calcStr.nativeElement.value)
   }
- cls(){
-   this.Calc.nativeElement.value = ''
-   this.result.nativeElement.value=''
-   console.log(this.alt)
- }
+//to clear screen
+  clear(){
+    this.calcStr.nativeElement.value = ''
+    this.result.nativeElement.value = ''
+
+  }
 
 
 }
