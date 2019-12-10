@@ -5,18 +5,34 @@
       <th scope="col">Item</th>
       <th scope="col">Quantity</th>
       <th scope="col">Price</th>
-      <th scope="col">Action</th>
+      <th scope="col">Action </th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">{{rows[0]?.id}}</th>
-      <td>{{rows[0]?.item}}</td>
-      <td>{{rows[0]?.quantity}}</td>
-      <td>{{rows[0]?.price}}</td>
-      <td ><u (click)="onDeleteRow(rows[0])">Delete</u></td>
+      <!-- <tr>
+        <th scope="col"><input type="text" (onkeyup)="sort()"></th>
+        <th scope="col"><input type="text" (onkeyup)="sort()"></th>
+        <th scope="col"><input type="text" (onkeyup)="sort()"></th>
+        <th scope="col"><input type="text" (onkeyup)="sort()"></th>
+        <td><u (click)="addData (addDatatoRow)">Add New</u></td>
+      </tr> -->
+
+      <tr>
+        <th scope="col"><input type="text" #textid ></th>
+        <th scope="col"><input type="text" #textitem></th>
+        <th scope="col"><input type="text" #textquantity ></th>
+        <th scope="col"><input type="text" #textprice ></th>
+        <td><u (click)="addData()">Add New</u></td>
+      </tr> 
+
+    <tr *ngFor="let row of rows">
+      <th scope="row" >{{row?.id}}</th>
+      <td>{{row?.item}}</td>
+      <td>{{row?.quantity}}</td>
+      <td>{{row?.price}}</td>
+      <td ><u (click)="onDeleteRow(row)">Delete</u></td>
     </tr>
-    <tr>
+    <!-- <tr>
       <th scope="row">{{rows[1]?.id}}</th>
       <td>{{rows[1]?.item}}</td>
       <td>{{rows[1]?.quantity}}</td>
@@ -29,8 +45,9 @@
       <td>{{rows[2]?.item}}</td>
       <td>{{rows[2]?.quantity}}</td>
       <td>{{rows[2]?.price}}</td>
-      <td><u (click)="onDeleteRow(rows[2])">Delete</u></td>
+      <td><u (click)="onDeleteRow(rows[2])">Delete</u>
+      </td> -->
 
-    </tr>
+   <!-- // </tr> -->
   </tbody>
 </table>

@@ -1,13 +1,10 @@
-import { FirstModule } from './first/first.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SampleComponent } from './sample/sample.component';
 import { GoogleComponent } from './google/google.component';
-import { FirstSampleNewComponent } from './first-sample-new/first-sample-new.component';
 import { CustomComponentsComponent } from './custom-components/custom-components.component';
-import { CustCompComponent } from './cust-comp/cust-comp.component';
 import { MathOpsComponent } from './math-ops/math-ops.component';
 
 @NgModule({
@@ -15,13 +12,11 @@ import { MathOpsComponent } from './math-ops/math-ops.component';
     AppComponent,
     SampleComponent,
     GoogleComponent,
-    FirstSampleNewComponent,
     CustomComponentsComponent,
-    CustCompComponent,
     MathOpsComponent
   ],
   imports: [
-    BrowserModule,FirstModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

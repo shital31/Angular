@@ -14,7 +14,12 @@ export class AppComponent {
   fetchData() {
     this.data.push({ id: 1, item: "pc", quantity: 1, price: 30000 });
     this.data.push({ id: 2, item: "pc", quantity: 1, price: 30000 });
-    this.data.push({ id: 3, item: "pc", quantity: 1, price: 30000 });
+    // this.data.push({ id: 3, item: "pc", quantity: 1, price: 30000 });
+    // this.data.push({ id: 4, item: "pc", quantity: 1, price: 30000 });
+    // this.data.push({ id: 5, item: "pc", quantity: 1, price: 30000 });
+    // this.data.push({ id: 6, item: "pc", quantity: 1, price: 30000 });
+    // this.data.push({ id: 7, item: "pc", quantity: 1, price: 30000 });
+    // this.data.push({ id: 8, item: "pc", quantity: 1, price: 30000 });
   }
 
   deleteRow(row: Tabrow) {
@@ -28,5 +33,10 @@ export class AppComponent {
         this.data.splice(index, 1);
       }
     });
+  }
+
+  addArray(add: Tabrow) {
+    // console.log("mi alee..........", add);
+    this.data.push(add);
   }
 }

@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col md-12">
+      <h1><strong><i>Directives</i></strong></h1>
+    </div>
+  </div>
+  <div class="row">
+    <p class="alert alert-warning" *ngIf="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ducimus, reiciendis consectetur voluptate fugiat eligendi quae repellat eum provident velit harum, officia itaque assumenda quam architecto. Velit quo commodi ullam.</p>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <input type="button" value="Okey" class="btn btn-secondary" (click)="onOkey(para)">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col md-12">
+      <ul>
+        <li *ngFor= "let mb of mobile">{{mb}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
