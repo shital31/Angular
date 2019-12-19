@@ -36,7 +36,6 @@ export class AppComponent {
   }
 
   addArray(add: Tabrow) {
-    // console.log("mi alee..........", add);
     this.data.push(add);
   }
 }

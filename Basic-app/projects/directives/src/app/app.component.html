@@ -5,7 +5,9 @@
     </div>
   </div>
   <div class="row">
-    <p class="alert alert-warning" *ngIf="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ducimus, reiciendis consectetur voluptate fugiat eligendi quae repellat eum provident velit harum, officia itaque assumenda quam architecto. Velit quo commodi ullam.</p>
+    <p class="alert alert-warning" *ngIf="ispara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ducimus,
+      reiciendis consectetur voluptate fugiat eligendi quae repellat eum provident velit harum, officia itaque assumenda
+      quam architecto. Velit quo commodi ullam.</p>
   </div>
   <div class="row">
     <div class="col-md-12">
@@ -15,8 +17,27 @@
   <div class="row">
     <div class="col md-12">
       <ul>
-        <li *ngFor= "let mb of mobile">{{mb}}</li>
+        <li *ngFor="let mb of mobile">{{mb}}</li>
       </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col md-12">
+      <p [ngStyle]="bsObj">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio voluptates eligendi
+        culpa recusandae incidunt veritatis ab quos magnam. Officiis porro necessitatibus enim soluta optio nam nulla,
+        atque odio cumque?</p>
+    </div>
+    <div [ngClass]="{'alert':isAl, 'alert-warning':isAl}">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      Explicabo iste repudiandae necessitatibus tempore! Omnis quaerat fugit iure laborum dolor repudiandae blanditiis,
+      magnam dicta explicabo vel mollitia tempore ducimus nulla facere.</div>
+  </div>
+  <input type="button" value="Okey" class="btn btn-info" (click)="removePara()">
+
+  <div class="row" appMagic>
+    <div class="col-md-12">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eius minus, beatae, exercitationem nisi enim
+        accusamus excepturi rem aliquam consequatur soluta labore? Quod, veritatis. Esse modi ratione officia doloribus
+        quas!</p>
     </div>
   </div>
 </div>

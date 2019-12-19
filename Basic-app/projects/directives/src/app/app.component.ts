@@ -7,10 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'directives';
-  para=false
+  ispara=false
   onOkey() {
-    this.para =! this.para
+    this.ispara =! this.ispara
   }
 
   mobile = ['Android','Apple','Samsung','Mi']
+
+  bsObj = ({ 'border': '1px solid red',
+              'color':'red' })
+  isAl = false
+  removePara(){
+    this.isAl =! this.isAl
+  }
 }
